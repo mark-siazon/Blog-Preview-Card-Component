@@ -1,0 +1,141 @@
+// Import media partial
+@import 'media';
+
+// Attribution
+#attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.4;
+
+  a {
+    color: hsl(228, 68%, 67%);
+  }
+
+  &:hover{
+    opacity: 0.9;
+  }
+}
+
+// Container Styles
+main {
+  > div {
+    background-color: $white;
+
+    @include respond-to(large) {
+      border-radius: 0 0 2rem 2rem;
+    }
+
+    > section {
+      margin: 20px 6vw 28px;
+
+      @include respond-to(large) {
+        margin: 20px auto 24px;
+        width: 800px;
+      }
+    }
+
+    &:first-child {
+      display: flex;
+      justify-content: center;
+
+      @include respond-to(large) {
+        border-radius: 2rem 2rem 0 0;
+      }
+
+      > img {
+        margin: 0 0 30px;
+
+        @include respond-to(large) {
+          border-radius: 0.5rem;
+          width: 90%;
+          margin: 30px;
+        }
+      }
+    }
+
+    #intro-sub-ctn {
+      background-color: $rose-white;
+      padding: 25px 20px;
+      border-radius: 10px;
+
+      h4 {
+        color: $dark-raspberry;
+      }
+
+      ul > li::marker {
+        color: $dark-raspberry;
+      }
+    }
+  }
+}
+
+// Lists
+section {
+  li {
+    padding: 4px 15px;
+    font-size: 0.95rem;
+
+    b {
+      font-size: 0.925rem;
+    }
+  }
+
+  > * > li {
+    padding: 5px 15px;
+    font-size: 1rem;
+    line-height: 1.35;
+
+    &::marker {
+      color: $nutmeg;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+  }
+
+  ul > li::marker {
+    color: $nutmeg;
+  }
+}
+
+// Tabular Styles
+section#food-nutrition{
+  .item {
+    @include flex(row, space-between, center);
+    padding: 10px 35px;
+  }
+}
+
+.label {
+  flex: 1;
+  text-align: left;
+}
+
+.value {
+  flex: 0.75;
+  text-align: left;
+  font-weight: 600;
+  color: $nutmeg;
+}
+
+// Horizontal Line Styles
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid $light-grey;
+  margin: 20px 0;
+}
+
+#food-nutrition {
+  hr {
+    margin: 5px 0;
+  }
+}
+
+.divider {
+  width: 87.5%;
+  margin: 25px auto;
+
+  @include respond-to(large) {
+    width: 89%;
+  }
+}

@@ -1,0 +1,42 @@
+// Reusable Styles
+.col {
+  @include flex(column);
+}
+
+.row,
+.item {
+  @include flex(row);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-center {
+  @include flex(row, center, center);
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}

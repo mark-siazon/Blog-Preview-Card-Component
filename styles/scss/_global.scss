@@ -1,0 +1,24 @@
+// Import media partial
+@import 'media';
+
+// Global Styles
+* {
+  margin: 0;
+}
+
+body {
+  @include respond-to(small) {
+    min-width: 260px;
+    margin: auto;
+  }
+
+  @include respond-to(large) {
+    max-width: 900px;
+    margin: 4rem auto;
+    background-color: $eggshell;
+  }
+  
+  
+  background-color: $white;
+  font-family: $font-family-outfit, sans-serif;
+}
