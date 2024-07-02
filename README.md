@@ -65,7 +65,7 @@ All viewports were included (except for the 4k view), in case the observer wishe
 
 ### Links:
 
-- Live Site URL: [Website Link - Click Me](https://mark-siazon.github.io/Blog-Preview-Card-Component/)
+- Live Site URL: [Website Link - Click Me](https://mark-siazon.github.io/FM-Blog-Preview-Card-Component/)
 - Solution URL: [FrontEndMentor - Click Me](https://www.frontendmentor.io/solutions/blog-preview-card-component-responsive-approach-using-scsssass-LDirp_yA4X)
 
 ## My process:
