@@ -9,7 +9,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: unset;
   font-family: "Figtree", sans-serif;
+  margin: 0 24px;
 }
 
 main {
@@ -17,9 +19,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  min-width: 327px;
-  max-width: 384px;
   gap: 24px;
+  min-width: 250px;
+  max-width: 384px;
   padding: 24px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
@@ -31,6 +33,7 @@ main p:first-child {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: unset;
   padding: 4px 12px;
   border-radius: 4px;
   background-color: hsl(47, 88%, 63%);
@@ -53,6 +56,10 @@ main h1 {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 150%;
+  transition: color 0.5s ease;
+}
+main h1:hover {
+  color: hsl(47, 88%, 63%);
 }
 
 main > img {
@@ -88,9 +95,16 @@ div.author p {
 }
 
 footer {
+  opacity: 0.4;
   margin-top: 40px;
+  width: 280px;
+  text-align: center;
+  transition: opacity 0.5s ease;
 }
 footer a {
   text-decoration: none;
   color: hsl(0, 0%, 50%);
+}
+footer:hover {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

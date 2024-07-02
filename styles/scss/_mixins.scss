@@ -1,9 +1,10 @@
 // Mixins
-@mixin flex($direction, $justify: center, $align: center) {
+@mixin flex($direction, $justify: center, $align: center, $gap: unset) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+  gap: $gap;
 }
 
 @mixin text-style($font-size, $font-weight, $line-height: 150%) {

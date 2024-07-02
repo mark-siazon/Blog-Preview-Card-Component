@@ -1,35 +1,38 @@
 // Component-specific styles
 
 main {
-  @include flex(column, center, start);
-  min-width: 327px;
+  @include flex(column, center, start, 24px);
+  min-width: 250px;
   max-width: 384px;
-  gap: 24px;
   padding: 24px;
   background-color: $white;
   border-radius: 20px;
   border: 1px solid $black;
   box-shadow: 8px 8px 0px 0px #000;
 
-  p:first-child {
+  p:first-child { // Learning
     @include flex(row, center, center);
     padding: 4px 12px;
     border-radius: 4px;
     background-color: $yellow;
-    @include text-style(0.75rem, 800);
+    @include text-style(0.75rem, $font-weight-bold);
   }
 
-  p:nth-child(2) {
-    @include text-style(0.75rem, 500);
+  p:nth-child(2) { // Date
+    @include text-style(0.75rem, $font-weight-regular);
   }
 
-  p:last-child {
+  p:last-child { // Details
     color: $grey;
-    @include text-style(0.875rem, 500);
+    @include text-style(0.875rem, $font-weight-regular);
   }
 
   h1 {
-    @include text-style(1.25rem, 800);
+    @include text-style(1.25rem, $font-weight-bold);
+    transition: color 0.5s ease;
+    &:hover{
+      color: $yellow;
+    }
   }
 }
 
@@ -39,13 +42,11 @@ main > img {
 }
 
 div.content {
-  @include flex(column, center, start);
-  gap: 12px;
+  @include flex(column, center, start, 12px);
 }
 
 div.author {
-  @include flex(row, start, center);
-  gap: 12px;
+  @include flex(row, start, center, 12px);
 
   img {
     width: 32px;
@@ -55,14 +56,23 @@ div.author {
 
   p {
     color: $black;
-    @include text-style(0.875rem, 800);
+    @include text-style(0.875rem, $font-weight-bold);
   }
 }
 
 footer{
+  opacity: 0.4;
   margin-top: 40px;
+  width: 280px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+
   a{
     text-decoration: none;
     color: $grey;
+  }
+
+  &:hover{
+    opacity: 1;
   }
 }

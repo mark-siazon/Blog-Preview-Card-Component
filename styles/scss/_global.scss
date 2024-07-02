@@ -8,4 +8,5 @@ body {
   min-height: 100vh;
   @include flex(column);
   font-family: $font-family-figtree;
+  margin: 0 24px;
 }
